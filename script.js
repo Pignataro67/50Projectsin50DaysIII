@@ -12,6 +12,14 @@ rightBtn.addEventListener('click', () => {
     setBgToBody() 
     setActiveSlide()})
 
+    leftBtn.addEventListener('click', () => { 
+      activeSlide--
+        if (activeSlide < 0) { 
+          activeSlide = slides.length - 1 }
+    
+    setBgToBody() 
+    setActiveSlide()})
+
 // const body = document.body
 // const slides = document.querySelectorAll('.slide')
 // const leftBtn = document.getElementById('left')
