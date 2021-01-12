@@ -25,7 +25,7 @@ function setTime() {
   const day = time.getDay()
   const date = time.getDate()
   const hours = time.getHours()
-  const hoursForCLock = hours >= 13 ? hours % 12 : hours;
+  const hoursForClock = hours >= 13 ? hours % 12 : hours;
   const minutes = time.getMinutes()
   const seconds = time.getSeconds()
   const ampm = hours >= 12 ? 'PM' : 'AM'
@@ -34,8 +34,8 @@ function setTime() {
   minuteEl.style.transform = `translate(-50%, -100%) rotate(${scale(minutes, 0, 59, 0, 360)}deg)`
   secondEl.style.transform = `translate(-50%, -100%) rotate(${scale(seconds, 0, 59, 0, 360)}deg)`
   
-  timeEl.innerHTML = `${hoursForCLock}:${minutes < 10 ? `0${minutes}` : minutes} ${ampm}`
-  dateEl.innerHTML = `${days[day]}, ${months[month]} <span class="circle>${date}</span>`
+  timeEl.innerHTML = `${hoursForClock}:${minutes < 10 ? `0${minutes}` : minutes} ${ampm}`
+  dateEl.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>`
 }
 
 const scale = (num, in_min, in_max, out_min, out_max) => {
