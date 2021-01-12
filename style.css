@@ -13,9 +13,9 @@ html {
   transition: all 0.5s ease-in;
 }
 
-html.dark {
+ html.dark {
   --primary-color: #fff;
-  --secondary: #333;
+  --secondary-color: #333;
 }
 
 html.dark {
@@ -42,7 +42,7 @@ body {
   padding: 8px 12px;
   position: absolute;
   top: 100px;
-}
+} 
 
 .toggle:focus {
   outline: none;
@@ -68,7 +68,7 @@ body {
   left: 50%;
   height: 65px;
   width: 3px;
-  transform-origin: bottom-center;
+  transform-origin: bottom center;
   transition: all 0.5s ease-in;
 }
 
