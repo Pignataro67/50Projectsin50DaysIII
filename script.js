@@ -20,6 +20,9 @@ canvas.addEventListener('mousedown', (e) => {
   y = e.offsetY
 })
 
+canvas.addEventListener('mouseup', (e) => { isPressed = false
+    x = undefined y = undefined})
+
 function drawCircle(x, y) {
     ctx.beginPath();
     ctx.arc(x, y, size, 0, Math.PI * 2)
