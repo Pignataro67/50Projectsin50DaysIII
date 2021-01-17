@@ -56,6 +56,14 @@ increaseBtn.addEventListener('click', () => {
  updateSizeOnScreen()
 })
 
+decreaseBtn.addEventListener('click', () => { 
+  size -= 5
+  
+  if(size < 5) { 
+    size = 5 
+  }
+})
+
 // const smallCups = document.querySelectorAll('.cup-small')
 // const liters = document.getElementById('liters')
 // const percentage = document.getElementById('percentage')
