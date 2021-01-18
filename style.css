@@ -12,6 +12,33 @@ body {
   margin: 0; 
 }
 
+.kinetic {
+  position: relative;
+  height: 80px;
+  width: 80px;
+}
+
+.kinetic::after, .kinetic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: #fff;
+}
+
+.kinetic::before {
+  transform: rotate(90deg);
+}
+
+@keyframes rotateA {
+  0%, 25% {
+    transform: rotate(180deg);
+  }
+}
+
 /* canvas {
   border: 2px solid steelblue;
 }
